@@ -1,0 +1,232 @@
+@import url('https://fonts.cdnfonts.com/css/minecraft-4');
+
+body, .topbar-logo, .topbar-title, .hero-logo, .hero-content, .hero-subtitle, .hero-warning, .btn-green, .hero-buttons .btn-green, .hero-content h2, .hero-content h1, .social, .hero-arrow {
+  font-family: 'Minecraft', Arial, sans-serif !important;
+}
+body {
+  margin: 0;
+  background: #181a1b url('./assets/backgrounds/background_1.21.2.png') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  min-height: 100vh;
+}
+.topbar {
+  width: 100%;
+  background: #23272a;
+  border-bottom: 2px solid #444;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+.topbar-content {
+  display: flex;
+  align-items: center;
+  height: 56px;
+}
+.topbar-logo {
+  height: 32px;
+  margin-right: 16px;
+}
+.topbar-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 2px;
+}
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 56px;
+}
+.hero-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(24,26,27,0.82);
+  z-index: 1;
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero-logo {
+  width: 480px;
+  max-width: 90vw;
+  margin-bottom: 24px;
+  margin-top: 32px;
+  filter: drop-shadow(0 4px 16px #000a);
+}
+.hero-subtitle {
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 16px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+.hero-warning {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffeb3b;
+  font-size: 1rem;
+  margin-bottom: 28px;
+  gap: 8px;
+}
+.warning-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+}
+.warning-emoji {
+  font-size: 1.1em;
+  margin-left: 2px;
+}
+.hero-buttons {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.btn-green {
+  background: #16c60c;
+  color: #fff;
+  border: 2px solid #111;
+  border-radius: 6px;
+  font-size: 1.15rem;
+  font-weight: 700;
+  padding: 16px 38px;
+  text-decoration: none;
+  transition: background 0.15s, color 0.15s, transform 0.1s;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+  cursor: pointer;
+  outline: none;
+  margin-bottom: 8px;
+  box-shadow: 0 2px 8px #0006;
+}
+.btn-green:hover {
+  background: #13a10e;
+  color: #fff;
+  transform: scale(1.04);
+}
+.hero-socials {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 32px;
+  justify-content: center;
+}
+.social svg {
+  width: 36px;
+  height: 36px;
+  filter: brightness(1.1) drop-shadow(0 2px 4px #0008);
+  transition: filter 0.15s, transform 0.15s;
+}
+.social svg:hover {
+  filter: brightness(1.5) drop-shadow(0 2px 8px #16c60c);
+  transform: scale(1.12);
+}
+.hero-arrow {
+  margin-top: 16px;
+  animation: arrow-bounce 1.5s infinite;
+}
+.hero-arrow svg {
+  width: 36px;
+  height: 36px;
+  opacity: 0.7;
+}
+@keyframes arrow-bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(12px); }
+}
+.features, .about, .contacts {
+  background: #23272aee;
+  padding: 60px 0;
+  border-radius: 24px;
+  margin-top: 40px;
+  box-shadow: 0 4px 24px 0 #181a1b55;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.features h2, .about h2, .contacts h2 {
+  text-align: center;
+  margin-bottom: 32px;
+  letter-spacing: 2px;
+  font-size: 2rem;
+}
+.features ul {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.features li {
+  background: #181a1bee;
+  margin-bottom: 16px;
+  padding: 18px 24px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  color: #fff;
+  border-left: 4px solid #16c60c;
+  transition: border-color 0.2s;
+}
+.features li:hover {
+  border-left: 4px solid #ffeb3b;
+}
+.about p, .contacts p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  color: #ccc;
+}
+.footer {
+  background: #181a1b;
+  padding: 24px 0;
+  text-align: center;
+  color: #888;
+  font-size: 0.95rem;
+  border-radius: 18px 18px 0 0;
+  box-shadow: 0 -2px 12px #181a1b55;
+  margin-top: 40px;
+}
+@media (max-width: 800px) {
+  .hero-logo {
+    width: 320px;
+  }
+  .hero-content {
+    max-width: 98vw;
+  }
+  .features, .about, .contacts {
+    padding: 32px 0;
+    border-radius: 12px;
+  }
+}
+@media (max-width: 500px) {
+  .hero-logo {
+    width: 220px;
+  }
+  .btn-green {
+    padding: 12px 18px;
+    font-size: 1rem;
+  }
+  .hero-subtitle {
+    font-size: 1.05rem;
+  }
+  .features, .about, .contacts {
+    padding: 18px 0;
+    border-radius: 8px;
+  }
+} 
